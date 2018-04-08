@@ -2,26 +2,141 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>HTML Table</title>
+    <style>
+        table , th , td{
+            border: 2px solid red;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 5px;
+        }
+        #custom-table th{
+            background-color: red;
+            color: white;
+        }
+        #custom-table{
+            font-family: Arial,sans-serif;
+        }
+    </style>
 </head>
 <body>
 
 
     <!-- Simple Table Example -->
+    <h2>SIMPLE TABLE</h2>
+    <table width="100%">
+        <thead>
+            <tr>
+                <th>SNO</th>
+                <th>NAME</th>
+                <th>ADDRESS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>John</td>
+                <td>US</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Williams</td>
+                <td>UK</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>NAVEEN</td>
+                <td>India</td>
+            </tr>
+        </tbody>
+    </table>
 
-    <!-- Table with Border all sides -->
-
-    <!-- Table with Border Collapse -->
-
-    <!-- Table With Padding -->
-
-    <!-- Table With Text Align -->
 
     <!-- Table with Col Span -->
+    <h2>Table with Col Span</h2>
+    <table width="100%">
+        <thead>
+            <tr>
+                <th>SNO</th>
+                <th colspan="2">NAME & Address</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>John</td>
+            <td>US</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Williams</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>NAVEEN</td>
+            <td>India</td>
+        </tr>
+        </tbody>
+    </table>
+
 
     <!-- Table With Row Span -->
+    <h2>Table With ROW Span</h2>
+    <table width="100%">
+        <thead>
+        <tr>
+            <th>SNO</th>
+            <th>NAME</th>
+            <th>ADDRESS</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td rowspan="2">1</td>
+            <td>John</td>
+            <td>US</td>
+        </tr>
+        <tr>
+            <td>Williams</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>NAVEEN</td>
+            <td>India</td>
+        </tr>
+        </tbody>
+    </table>
 
     <!-- Custom Table with CSS -->
+    <h2>Custom Table with CSS</h2>
+    <table width="100%" id="custom-table">
+        <thead>
+        <tr>
+            <th>SNO</th>
+            <th>NAME</th>
+            <th>ADDRESS</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>John</td>
+            <td>US</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Williams</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>NAVEEN</td>
+            <td>India</td>
+        </tr>
+        </tbody>
+    </table>
 
 
 </body>

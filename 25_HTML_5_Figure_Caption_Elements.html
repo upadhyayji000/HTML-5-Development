@@ -2,9 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>HTML5 Figure & FigCaption</title>
+    <style>
+        figure{
+            border: 2px solid gray;
+            width: 300px;
+            padding: 7px;
+            border-radius: 7px;
+        }
+        img{
+            border-radius: 7px;
+        }
+        figcaption{
+            text-align: center;
+            padding: 10px;
+        }
+        figure:hover{
+            box-shadow: 5px 5px 5px gray;
+            cursor: pointer; /* for Hand Symbol */
+        }
+    </style>
 </head>
 <body>
+
+    <figure>
+        <img src="img/corporate.jpg" width="300" height="200">
+        <figcaption>Corporate Image</figcaption>
+    </figure>
 
 </body>
 </html>

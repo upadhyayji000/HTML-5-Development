@@ -3,11 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <title>HTML Aside Element</title>
-    
+    <style>
+        ul{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        aside{
+            font-family: "Open Sans", sans-serif;
+            background-color: darkgray;
+            float: left;
+            width: 250px;
+            font-size: 25px;
+            text-align: center;
+            border-radius: 10px ;
+        }
+        li a{
+            text-decoration: none;
+            color: black;
+            padding: 14px 25px;
+            display: block;
+        }
+
+        li a:hover{
+            background-color: gray;
+            color: white;
+            border-radius: 10px ;
+        }
+
+        li a.active{
+            background-color: seagreen;
+            color: white;
+            border-radius: 10px ;
+        }
+
+    </style>
 </head>
 <body>
 
-    
+    <aside>
+        <ul>
+            <li>
+                <a href="#" class="active">HTML</a>
+            </li>
+            <li>
+                <a href="#">CSS</a>
+            </li>
+            <li>
+                <a href="#">JavaScript</a>
+            </li>
+            <li>
+                <a href="#">JQuery</a>
+            </li>
+            <li>
+                <a href="#">AJAX</a>
+            </li>
+            <li>
+                <a href="#">Bootstrap</a>
+            </li>
+            <li>
+                <a href="#">Angular JS</a>
+            </li>
+        </ul>
+    </aside>
 
 </body>
 </html>

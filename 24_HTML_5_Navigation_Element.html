@@ -5,9 +5,73 @@
     <title>HTML5 Nav Element</title>
     <link href="font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+
+    <style>
+        body{
+            margin: 0;
+        }
+        ul{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav{
+            background-color: green;
+            overflow: hidden; /* mandatory */
+        }
+
+        ul li{
+            float: left; /* overflown background color */
+        }
+
+        li a{
+            text-decoration: none;
+            color: white;
+            padding: 14px 25px;
+            display: inline-block; /* mandatory */
+            font-size: 25px;
+        }
+
+        li a:hover{
+            background-color: ;
+        }
+
+        li a.active{
+            background-color: green;
+        }
+    </style>
 </head>
 <body>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#" class="active">
+                   <i class="fa fa-home"></i> Home
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                  <i class=" fa fa-envelope"></i>  Contact
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                  <i class="fa fa-graduation-cap"></i>  Careers
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                  <i class="fa fa-id-card"></i>  About
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                  <i class="fa fa-users"></i>  Forum
+                </a>
+            </li>
+        </ul>
+    </nav>
 
 </body>
 </html>
